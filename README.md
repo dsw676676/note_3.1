@@ -31,3 +31,5 @@ win+空格|**选择输入法**
 
 1. [中国知网](https://www.cnki.net/)：文献搜索
 2. [国家统计局](https://data.stats.gov.cn/)/[世界银行](https://data.worldbank.org.cn/)：数据来源
+
+   ![图片](images/2022-07-30-21-41-44.png)
