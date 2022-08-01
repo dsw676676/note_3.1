@@ -1,12 +1,26 @@
 # markdown基础与拓展语法
 ---
-[toc]
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [markdown基础与拓展语法](#markdown基础与拓展语法)
+  - [一、markdown基本语法](#一-markdown基本语法)
+    - [1. 内容](#1-内容)
+    - [2. 条块](#2-条块)
+  - [二、MPE拓展语法](#二-mpe拓展语法)
+    - [1. 幻灯片](#1-幻灯片)
+    - [2. 目录](#2-目录)
+    - [3. 绘图](#3-绘图)
+
+<!-- /code_chunk_output -->
+
 
 ## 一、markdown基本语法
 ---
-
 ### 1. 内容
-   1. #### 标题 
+   1. #### 标题
    2. ==高亮==
    3. **加粗**
    4. *倾斜*
@@ -16,8 +30,8 @@
    8. <img src="" width=50%>
 <!-- slide_ -->
 ### 2. 条块
-   1. |表格|
-       |----|
+   1. |表头|
+      |:--|
    2. > 注释
    3. 分割线
 
@@ -30,8 +44,8 @@
 ## 二、MPE拓展语法
 ---
 ### 1. 幻灯片
-   1. 分页：\<!-- slide_ -->
-   2. [样式](实例/PPT.md)：first theme, mouseWheel, transition, progress
+1. 分页：\<!-- slide_ -->
+2. [样式](实例/PPT.md)：first theme, mouseWheel, transition, progress
 ### 2. 目录
    1. 简单：[toc]
    2. 复杂：Ctrl+Shift+P >> Create Toc

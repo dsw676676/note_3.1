@@ -1,6 +1,18 @@
 # MPE-Mermaid基础介绍
 ---
-[toc]
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [MPE-Mermaid基础介绍](#mpe-mermaid基础介绍)
+  - [一、序列图](#一-序列图)
+    - [1. 关系](#1-关系)
+    - [2. 标记](#2-标记)
+  - [二、流程图](#二-流程图)
+    - [1. 线关系](#1-线关系)
+    - [2. 面关系](#2-面关系)
+
+<!-- /code_chunk_output -->
 
 
 ## 一、序列图
@@ -27,6 +39,7 @@ sequenceDiagram
 ### 1. 线关系
 1. 线方向：`A --> B & D -->C`
 2. 线形态：`-.->`
+
     ![箭头属性](images/2022-08-01-11-11-25.png)
 3. 线注释：`--text-->`
 ### 2. 面关系
