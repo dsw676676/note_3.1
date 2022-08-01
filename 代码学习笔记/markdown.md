@@ -1,18 +1,16 @@
 # markdown基础与拓展语法
 ---
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
 <!-- code_chunk_output -->
 
-- [markdown基础与拓展语法](#markdown基础与拓展语法)
-  - [一、markdown基本语法](#一-markdown基本语法)
-    - [1. 内容](#1-内容)
-    - [2. 条块](#2-条块)
-  - [二、MPE拓展语法](#二-mpe拓展语法)
-    - [1. 幻灯片](#1-幻灯片)
-    - [2. 目录](#2-目录)
-    - [3. 绘图](#3-绘图)
+- [# markdown基础与拓展语法](#-markdown基础与拓展语法)
+- [## 一、markdown基本语法](#-一markdown基本语法)
+  - [1. 内容](#1-内容)
+  - [2. 条块](#2-条块)
+- [## 二、MPE拓展语法](#-二mpe拓展语法)
+  - [1. 幻灯片](#1-幻灯片)
+  - [2. 目录](#2-目录)
+  - [3. 绘图](#3-绘图)
 
 <!-- /code_chunk_output -->
 

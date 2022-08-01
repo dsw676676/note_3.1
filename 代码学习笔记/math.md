@@ -17,7 +17,8 @@
 2. 常用函数
     |函数|含义|
     |:--|--:|
-    |`\begin{} \end{}`|开始结束，如matrx/|
+    |\begin{} \end{}|开始结束，如matrx/|
+    |\sum|求和|
 
 ## 二、罗列
 $$ \beta = \frac{\sqrt{x}}{\sqrt{y+1}} \tag{2.1} $$
