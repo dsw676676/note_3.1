@@ -1,9 +1,3 @@
-# MPE-PPT基础介绍
----
-[toc]
-
-
-
 ## 一、Front-Matter基础语法
 ---
 ### 1. 分页方法
@@ -13,13 +7,14 @@
 |:--|--|--:|
 |theme|主题|beige/black/blood/league/moon/night /serif/simple/sky/solarized/white/none|
 |width/height/margin/center|位置宽高|`num`, true/false|
-|progress/slideNumber/overview/controls|显示控件|true/false|
+|progress/slideNumber/ overview/controls|显示控件|true/false|
 |mouseWheel/autoSlide|控制|true/false, `num`|
 |transition/transitionSpeed|切换|none/fade/slide/convex/concave/zoom, default/fast/slow|
 |**parallaxBackground**Image /.Size/.Horizontal/.Vertical|背景图片|`"situ"`/`num`/null|
 
 
 ## 二、实例示范
+---
 <!-- 使用方法：减少缩进+迁移front-matter -->
     ---
     presentation:

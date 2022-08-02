@@ -1,15 +1,5 @@
-# markdown math模块
-
-
-<!-- code_chunk_output -->
-
-- [markdown math模块](#markdown-math模块)
-  - [一、总结](#一总结)
-  - [二、罗列](#二罗列)
-
-<!-- /code_chunk_output -->
-
 ## 一、总结
+---
 1. 语法概览
    1. 框架：`$行内$`、`$$行间$$`
    2. 函数：`\func{x}`
@@ -21,6 +11,7 @@
     |\sum|求和|
 
 ## 二、罗列
+---
 $$ \beta = \frac{\sqrt{x}}{\sqrt{y+1}} \tag{2.1} $$
 
 $$ \left|\begin{matrix}

@@ -1,18 +1,11 @@
-# markdown基础与拓展语法
----
-
-<!-- code_chunk_output -->
-
-- [# markdown基础与拓展语法](#-markdown基础与拓展语法)
 - [## 一、markdown基本语法](#-一markdown基本语法)
   - [1. 内容](#1-内容)
   - [2. 条块](#2-条块)
-- [## 二、MPE拓展语法](#-二mpe拓展语法)
+- [## 二、MPE拓展语法(谨慎使用)](#-二mpe拓展语法谨慎使用)
   - [1. 幻灯片](#1-幻灯片)
   - [2. 目录](#2-目录)
   - [3. 绘图](#3-绘图)
-
-<!-- /code_chunk_output -->
+  - [4. 可执行代码块](#4-可执行代码块)
 
 
 ## 一、markdown基本语法
@@ -34,12 +27,11 @@
    3. 分割线
 
         ---
-   4. 
-        ```python{cmd=true}
-        print("code trunk")
-        ```
+   4. ```python
+      print("code trunk")
+      ```
 
-## 二、MPE拓展语法
+## 二、MPE拓展语法(谨慎使用)
 ---
 ### 1. 幻灯片
 1. 分页：\<!-- slide_ -->
@@ -49,4 +41,7 @@
    2. 复杂：Ctrl+Shift+P >> Create Toc
 ### 3. 绘图
    1. [mermaid绘图](实例/mermaid.md)
-
+### 4. 可执行代码块
+   1. ```python{cmd=true}
+      print("code trunk")
+      ```
