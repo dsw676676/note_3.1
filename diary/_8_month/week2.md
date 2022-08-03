@@ -14,6 +14,13 @@
 
 ## 2022/8/3 Wednesday
 ### 已完成
+1. 构造基本[proxies爬虫](../../../project/本研/pack2/_3info/_4proxies_get.py)：**api爬取**+清洗+**测试**+输出
+2. 重新对58同城网站进行解析
+3. 学习Xpath方法
+   ```mermaid
+   graph LR
+      A(begin)-->|import|B{lxml.etree}-->|etree.HTML函数|selector-->|selector.xpath函数|data
+   ```
 <!-- 1. 基本词性
    | 结构     |       内容        | 一般用词 |
    | :------- | :---------------: | -------: |
@@ -23,8 +30,8 @@
    | 定语     | 形容**主语/宾语** |    adj的 |
    | 状语     |   形容**谓语**    |    adv得 |
    | 补语     | 补充说明**宾语**  |          |
-2. 常用介词充当状语：over
-3. 句式
+1. 常用介词充当状语：over
+2. 句式
    1. 简单句
       1. **主**+**谓**+**宾**++补+状+定
       2. 主+系+表
@@ -32,5 +39,6 @@
       1. 一般疑问句：be/情态动词+主语+宾语/表语
       2. 特殊疑问句：header+一般疑问句 -->
 ### 未完成
-1. [proxies](../../../project/本研/pack2/_3info/_4proxies_get.py)：无法输出问题
-2. [file_work](../../../project/本研/pack/_4output/file_work.py)：串联[相关理念](../../../project/本研/README/README.md/#2-问题)
+1. [ ] [proxies](../../../project/本研/pack2/_3info/_4proxies_get.py)：搭建IP池
+2. [ ] [file_work](../../../project/本研/pack/_4output/file_work.py)：串联[相关内容](../../../project/本研/README/README.md/#2-问题)
+3. [ ] 仍未回复王欣
