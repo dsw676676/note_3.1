@@ -1,4 +1,19 @@
-# WEEK 2 diary
+# WEEK 2 diary #日记
+
+- [WEEK 2 diary #日记](#week-2-diary-日记)
+  - [2022/8/2 Tuesday](#202282-tuesday)
+    - [已完成](#已完成)
+    - [未完成](#未完成)
+  - [2022/8/3 Wednesday](#202283-wednesday)
+    - [已完成](#已完成-1)
+    - [未完成](#未完成-1)
+  - [2022/8/4 Thursday](#202284-thursday)
+    - [已完成](#已完成-2)
+    - [未完成](#未完成-2)
+  - [2022/8/5 Friday](#202285-friday)
+    - [目标](#目标)
+    - [已完成](#已完成-3)
+    - [未完成](#未完成-3)
 
 ## 2022/8/2 Tuesday
 
@@ -21,10 +36,9 @@
 
    ### 已完成
 
-   1. 构造基本[proxies爬虫](../../../project/本研/pack2/_3info/_4proxies_get.py)：**api爬取**+清洗+**测试**+输出 #爬虫相关
-   2. 重新对58同城网站进行解析 #爬虫相关
-   3. 学习Xpath方法 #算法学习
-
+   1. 构造基本[proxies爬虫](../../../project/本研/pack2/_3info/_4proxies_get.py)：**api爬取**+清洗+**测试**+输出
+   2. 重新对58同城网站进行解析
+   3. 学习Xpath方法
       ```mermaid
       graph LR
          A(begin)-->|import|B{lxml.etree}-->|etree.HTML函数|selector-->|selector.xpath函数|data
@@ -49,31 +63,38 @@
 
    ### 未完成
 
-   1. [x] [proxies](../../../project/本研/pack2/_3info/_4proxies_get.py)：搭建IP池 #爬虫相关
-   2. [x] [file_work](../../../project/本研/pack2/_4output/file_work.py)：串联[相关内容](../../../project/本研/README/README.md/#2-问题) #爬虫相关
-   3. [x] 仍未回复王欣-->需要修改团队报告文稿 #生活工作
+   1. [x] [proxies](../../../project/本研/pack2/_3info/_4proxies_get.py)：搭建IP池
+   2. [x] [file_work](../../../project/本研/pack2/_4output/file_work.py)：串联[相关内容](../../../project/本研/README/README.md/#2-问题)
+   3. [x] 仍未回复王欣-->需要修改团队报告文稿
 
 ## 2022/8/4 Thursday
 
    ### 已完成
 
-   1. 相关[IP_api接口](../../../project/本研/pack2/_3info/_4proxies_get.py)已经完成，具有相关能力。但仍未实践 #爬虫相关
+   1. 相关[IP_api接口](../../../project/本研/pack2/_3info/_4proxies_get.py)已经完成，具有相关能力。但仍未实践
 
    ### 未完成
 
-   1. [ ] [file_work](../../../project/本研/pack2/_4output/file_work.py)能力测试 #爬虫相关
-   2. [ ] [proxie](../../../project/本研/pack2/data/proxies.json)可行性改善 #爬虫相关
-   3. [ ] [README文档](../../../project/本研/README/README.md) #爬虫相关
-      1. [ ] 当前阶段总结
-      2. [ ] 下一阶段提出
-   4. [ ] 未回复甘欣霖、吴涛 #生活工作
+   1. [x] [file_work](../../../project/本研/pack2/_4output/file_work.py)能力测试
+   2. [x] [proxie](../../../project/本研/pack2/data/proxies.json)可行性改善
+   3. [ ] [README文档](../../../project/本研/README/README.md)
+      1. [ ] 当前阶段总结：python语法汇总+相关包内容归纳
+      2. [ ] 下一阶段提出：相关内容
+   4. [ ] 未回复甘欣霖、吴涛
 
 ## 2022/8/5 Friday
 
    ### 目标
 
-   1. 回复相关内容
+   1. 回复相关内容：吴涛、甘欣霖
    2. 爬虫进一步调试
    3. 绘画
 
    ### 已完成
+
+   1. 爬取工作完成
+
+   ### 未完成
+
+   1. [ ] 绘画
+   2. [ ] 概统复习
