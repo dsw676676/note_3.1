@@ -1,20 +1,20 @@
-# 尝试
-- [尝试](#尝试)
+# Markdown总览 #笔记
+
+- [Markdown总览 #笔记](#markdown总览-笔记)
   - [一、markdown基本语法](#一markdown基本语法)
     - [1. 内容](#1-内容)
     - [2. 条块](#2-条块)
     - [3. 快捷键](#3-快捷键)
-  - [二、MPE拓展语法(谨慎使用)](#二mpe拓展语法谨慎使用)
-    - [1. 幻灯片](#1-幻灯片)
-    - [2. 目录](#2-目录)
-    - [3. 绘图](#3-绘图)
-    - [4. 可执行代码块](#4-可执行代码块)
-  - [三、主要使用分工](#三主要使用分工)
+  - [二、插件分工](#二插件分工)
     - [1. markdown all in one](#1-markdown-all-in-one)
-    - [~~2. markdown preview enhanced~~](#2-markdown-preview-enhanced)
-    - [3. markdown paste](#3-markdown-paste)
+    - [2. picgo](#2-picgo)
+    - [~~3. markdown preview enhanced~~](#3-markdown-preview-enhanced)
+  - [三、Markdown-Math](#三markdown-math)
+    - [1.总结](#1总结)
+    - [2.罗列](#2罗列)
   
 ## 一、markdown基本语法
+
 ### 1. 内容
    1. #### 标题
    2. **加粗**
@@ -48,31 +48,61 @@
    Ctrl + Shift + V|Toggle preview
    Ctrl + K V|Toggle preview to side
 
-
-## 二、MPE拓展语法(谨慎使用)
-
-### 1. 幻灯片
-1. 分页：\<!-- slide_ -->
-2. [样式](实例/PPT.md)：first theme, mouseWheel, transition, progress
-### 2. 目录
-   1. 简单：[toc]
-   2. 复杂：Ctrl+Shift+P >> Create Toc
-### 3. 绘图
-   1. [mermaid绘图](实例/mermaid.md)
-### 4. 可执行代码块
-   1. ```python{cmd=true}
-      print("code trunk")
-      ```
-
-## 三、主要使用分工
+## 二、插件分工
 
 ### 1. markdown all in one
 1. 自动补全、换行
 2. 提供目录：`Ctrl+Alt+P`
-3. 书写数学公式：`Ctrl+M`
-### ~~2. markdown preview enhanced~~
-1. ~~制作幻灯片、绘图~~
-2. ~~导出pandoc~~
-3. ~~调换格式~~
-### 3. markdown paste
-1. 粘贴图片
+3. 书写[数学公式](#四markdown-math) ：`Ctrl+M`
+### 2. picgo
+1. 粘贴图片`Ctrl+Alt+U`
+### ~~3. markdown preview enhanced~~
+1. 幻灯片
+   1. 分页：\<!-- slide_ -->
+   2. [样式](实例/PPT.md)：first theme, mouseWheel, transition, progress
+2. 目录
+   1. 简单：[toc]
+   2. 复杂：Ctrl+Shift+P >> Create Toc
+3. 绘图
+   1. [mermaid绘图](实例/mermaid.md)
+4. 可执行代码块
+   ```python{cmd=true}
+      print("code trunk")
+   ```
+5. 导出：pandoc
+   
+## 三、Markdown-Math
+
+### 1.总结
+1. 语法概览
+   1. 框架：`$行内$`、`$$行间$$`
+   2. 函数：`\func{x}`
+   3. 编号：`\tag{}`
+2. 常用函数[link]
+    | 函数            |              含义 |
+    | :-------------- | ----------------: |
+    | \begin{} \end{} | 开始结束，如matrx |
+    | \sum            |              求和 |
+### 2.罗列
+$$ \beta = \frac{\sqrt{x}}{\sqrt{y+1}} \tag{2.1} $$
+
+$$ \left|\begin{matrix}
+    x & y & z \\
+    a & b & c \\
+    \end{matrix}\right| \tag{2.2} $$
+
+$$\left|
+	\begin{matrix}
+		x&y&z\\
+		z&x&y
+	\end{matrix}
+\right|=x+y+z$$
+$$ \sum_{i=1}^{\infty}{x+y}=0 \tag{2.3} $$
+
+$$ \sin^2(\theta) + \cos^2(\theta) = 1 \tag{2.4} $$
+
+$$ \sum_{n=1}^{\infty}{k} = 1 \tag{2.5} $$
+
+$$ \int_a^bf(x)\,dx \tag{2.6} $$
+
+$$ \lim_{x\to\infty}\exp(-x) = 0 \tag{2.7} $$

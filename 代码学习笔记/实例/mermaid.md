@@ -1,5 +1,5 @@
-# mermaid使用
-- [mermaid使用](#mermaid使用)
+# mermaid使用 #笔记
+- [mermaid使用 #笔记](#mermaid使用-笔记)
   - [一、序列图sequenceDiagram](#一序列图sequencediagram)
     - [1. 关系](#1-关系)
     - [2. 标记](#2-标记)
@@ -34,7 +34,7 @@
 1. 线方向：`A --> B & D -->C`
 2. 线形态：`-.->`
 
-    ![箭头属性](images/2022-08-01-11-11-25.png)
+    ![箭头分类](https://raw.githubusercontent.com/dsw676676/picture/main/image/20220806150607.png)
 3. 线注释：`--text-->`
 ### 2. 面关系
 1. 子图划分：`subgraph graphname \\ end`
