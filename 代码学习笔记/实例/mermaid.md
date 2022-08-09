@@ -53,6 +53,7 @@
 ## 三、饼图pie
 ### 1. 主体：`name: num`
 ### 2. 标记：`title`
+
 ```mermaid
 pie
     title 时间占用关系

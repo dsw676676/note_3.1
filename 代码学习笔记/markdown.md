@@ -24,6 +24,7 @@
    6. 数学：$\frac{\beta}{\alpha}=\frac{\sqrt{x}}{\sqrt{x+y}}$
    7. [链接](test.md)
    8. ![图片]()
+
 <!-- slide_ -->
 ### 2. 条块
    1. |表头|
@@ -33,8 +34,7 @@
 
         ---
    4. ```python
-      print("code trunk")
-      ```
+      print("code trunk")```
 ### 3. 快捷键
    Key|Command
    :--|--:
