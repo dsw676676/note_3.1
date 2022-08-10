@@ -1,0 +1,888 @@
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>pygame库学习笔记 #笔记 - Foam-mkdocs-template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pygame库学习笔记-笔记" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Foam-mkdocs-template" class="md-header-nav__button md-logo" aria-label="Foam-mkdocs-template">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Foam-mkdocs-template
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              pygame库学习笔记 #笔记
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        HomePage
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../diary/_8_month/week2/" class="md-tabs__link">
+          Diary
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../django/" class="md-tabs__link md-tabs__link--active">
+          代码学习笔记
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../%E9%80%9F%E8%AE%B0/%E5%AE%9E%E8%B7%B5%E5%86%85%E5%AE%B9%E8%AE%A8%E8%AE%BA/" class="md-tabs__link">
+          速记
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Foam-mkdocs-template" class="md-nav__button md-logo" aria-label="Foam-mkdocs-template">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Foam-mkdocs-template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="HomePage" class="md-nav__link">
+      HomePage
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Diary
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Diary" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Diary
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+       8 month
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label=" 8 month" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+         8 month
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../diary/_8_month/week2/" title="WEEK 2 #日记" class="md-nav__link">
+      WEEK 2 #日记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../diary/_8_month/week3/" title="Week 3 #日记" class="md-nav__link">
+      Week 3 #日记
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      代码学习笔记
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="代码学习笔记" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        代码学习笔记
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../django/" title="Django学习笔记 #笔记" class="md-nav__link">
+      Django学习笔记 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../markdown/" title="Markdown总览 #笔记" class="md-nav__link">
+      Markdown总览 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        pygame库学习笔记 #笔记
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="pygame库学习笔记 #笔记" class="md-nav__link md-nav__link--active">
+      pygame库学习笔记 #笔记
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#一基本介绍" class="md-nav__link">
+    一、基本介绍
+  </a>
+  
+    <nav class="md-nav" aria-label="一、基本介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-代码基础" class="md-nav__link">
+    1. 代码基础
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-surface设置" class="md-nav__link">
+    2. Surface设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-rect设置" class="md-nav__link">
+    3. Rect设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-event内容" class="md-nav__link">
+    3. Event内容
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二实操心得" class="md-nav__link">
+    二、实操心得
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../python/" title="python语法归纳 #笔记" class="md-nav__link">
+      python语法归纳 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../stata/" title="stata基本内容介绍 #笔记" class="md-nav__link">
+      stata基本内容介绍 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6">
+    
+    <label class="md-nav__link" for="nav-3-6">
+      实例
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="实例" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-6">
+        <span class="md-nav__icon md-icon"></span>
+        实例
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E5%AE%9E%E4%BE%8B/PPT/" title="MPE-PPT方法 #笔记" class="md-nav__link">
+      MPE-PPT方法 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E5%AE%9E%E4%BE%8B/mermaid/" title="mermaid使用 #笔记" class="md-nav__link">
+      mermaid使用 #笔记
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      速记
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="速记" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        速记
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../%E9%80%9F%E8%AE%B0/%E5%AE%9E%E8%B7%B5%E5%86%85%E5%AE%B9%E8%AE%A8%E8%AE%BA/" title="物理与实践 #笔记" class="md-nav__link">
+      物理与实践 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../%E9%80%9F%E8%AE%B0/%E6%9C%AC%E7%A0%94%E5%AE%9E%E7%8E%B0/" title="本研踏勘+stata实现 #笔记" class="md-nav__link">
+      本研踏勘+stata实现 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../%E9%80%9F%E8%AE%B0/%E7%BB%98%E7%94%BB/" title="绘画基本技法 #笔记" class="md-nav__link">
+      绘画基本技法 #笔记
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#一基本介绍" class="md-nav__link">
+    一、基本介绍
+  </a>
+  
+    <nav class="md-nav" aria-label="一、基本介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-代码基础" class="md-nav__link">
+    1. 代码基础
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-surface设置" class="md-nav__link">
+    2. Surface设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-rect设置" class="md-nav__link">
+    3. Rect设置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-event内容" class="md-nav__link">
+    3. Event内容
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二实操心得" class="md-nav__link">
+    二、实操心得
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="pygame库学习笔记-笔记">pygame库学习笔记 #笔记<a class="headerlink" href="#pygame库学习笔记-笔记" title="Permanent link">#</a></h1>
+<h2 id="一基本介绍">一、基本介绍<a class="headerlink" href="#一基本介绍" title="Permanent link">#</a></h2>
+<h3 id="1-代码基础">1. 代码基础<a class="headerlink" href="#1-代码基础" title="Permanent link">#</a></h3>
+<ol>
+<li>
+<p>执行流程：<code>获取/判断/响应/刷新</code>循环</p>
+<p><img alt="20220807113632" src="https://raw.githubusercontent.com/dsw676676/picture/main/image/20220807113632.png" /><br />
+2. 核心概念<br />
+   1. Surface绘图平面<br />
+   2. Rect矩形区域：通过<code>get_rect()</code>方法获得<br />
+   3. 对象放置：<code>blit()</code><br />
+   4. 界面重绘：<code>display.flip()</code><br />
+   5. <a href="#1-代码基础">窗口主循环</a></p>
+<h3 id="2-surface设置">2. Surface设置<a class="headerlink" href="#2-surface设置" title="Permanent link">#</a></h3>
+<ol>
+<li>窗口设置：<code>pygame.display</code><br />
+   <div class="highlight"><pre><span></span><code><span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+<span class="n">screen</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="mi">600</span><span class="p">)</span> <span class="c1"># 尺寸</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_icon</span><span class="p">(</span><span class="n">icon</span><span class="p">)</span> <span class="c1"># 图标</span>
+</code></pre></div></li>
+</ol>
+<h3 id="3-rect设置">3. Rect设置<a class="headerlink" href="#3-rect设置" title="Permanent link">#</a></h3>
+<ol>
+<li><strong>导入图像</strong>：<code>pygame.image</code><br />
+   <div class="highlight"><pre><span></span><code>sr = pygame.image.load(&quot;image.jpg&quot;)
+</code></pre></div></li>
+<li>载入物体<br />
+   <div class="highlight"><pre><span></span><code>rectsr = sr.get_rect()
+</code></pre></div></li>
+<li>能够获得相关一个覆盖图像的矩形Rect对象</li>
+<li>Rect对象具有属性</li>
+<li>top,bottom,left,right 表示上下左右</li>
+<li>width,height 表示宽度、高度</li>
+</ol>
+<h3 id="3-event内容">3. Event内容<a class="headerlink" href="#3-event内容" title="Permanent link">#</a></h3>
+<ol>
+<li>事件捕获：<code>pygame.event</code><br />
+<img alt="20220807141710" src="https://raw.githubusercontent.com/dsw676676/picture/main/image/20220807141710.png" /></li>
+</ol>
+</li>
+<li>
+<p>处理事件：</p>
+<blockquote>
+<p>pygame.event.get()<br />
+pygame.event.poll()<br />
+pygame.event.clear()</p>
+</blockquote>
+</li>
+<li>
+<p>操作事件队列：</p>
+<blockquote>
+<p>pygame.event.set_blocked()<br />
+pygame.event.get_blocked()<br />
+pygame.event.set_allowed()</p>
+</blockquote>
+</li>
+<li>
+<p>生成事件：</p>
+<blockquote>
+<p>pygame.event.post()<br />
+pygame.event.Event</p>
+</blockquote>
+</li>
+<li>
+<p>事件内容：</p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>event.unicode</td>
+<td>按键unicode码，不推荐</td>
+</tr>
+<tr>
+<td>event.key</td>
+<td>按键的常量名称<img alt="20220807142728" src="https://raw.githubusercontent.com/dsw676676/picture/main/image/20220807142728.png" /></td>
+</tr>
+<tr>
+<td>event.mod</td>
+<td>按键修饰符的组合值</td>
+</tr>
+<tr>
+<td>### 3. Event响应</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>函数</td>
+</tr>
+<tr>
+<td></td>
+<td>---</td>
+</tr>
+<tr>
+<td></td>
+<td><code>rectsr.move(x,y)</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>screen.fill(color)</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>screen.blit(src, dest)</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>pygame.time.Clock()</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>clock.tick(framerate)</code></td>
+</tr>
+<tr>
+<td>### 4. 其他绘制</td>
+<td></td>
+</tr>
+<tr>
+<td>1. 图形绘制：<code>pygame.draw.?(Surface,color,Rect,width...)</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="20220807143428" src="https://raw.githubusercontent.com/dsw676676/picture/main/image/20220807143428.png" /><br />
+2. 文字绘制：<code>pygame.freetype.Font</code><br />
+   1. Rect对象<br />
+    <div class="highlight"><pre><span></span><code>pygame.freetype.Font.render_to(surf, dest, text, fgcolor=None, bgcolor=None, rotation=0, size=0)
+</code></pre></div><br />
+   2. Surface对象<br />
+    <div class="highlight"><pre><span></span><code>pygame.freetype.Font.render(text, fgcolor=None, bgcolor=None,rotation=0, size=0)
+</code></pre></div></p>
+</li>
+</ol>
+<h2 id="二实操心得">二、实操心得<a class="headerlink" href="#二实操心得" title="Permanent link">#</a></h2>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../markdown/" title="Markdown总览 #笔记" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                Markdown总览 #笔记
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../python/" title="python语法归纳 #笔记" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                python语法归纳 #笔记
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["navigation.expand", "tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

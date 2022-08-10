@@ -1,0 +1,824 @@
+
+
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-5.5.12">
+    
+    
+      
+        <title>本研踏勘+stata实现 #笔记 - Foam-mkdocs-template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4dd2dd8d.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#本研踏勘stata实现-笔记" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Foam-mkdocs-template" class="md-header-nav__button md-logo" aria-label="Foam-mkdocs-template">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Foam-mkdocs-template
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              本研踏勘+stata实现 #笔记
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        HomePage
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../diary/_8_month/week2/" class="md-tabs__link">
+          Diary
+        </a>
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/django/" class="md-tabs__link">
+          代码学习笔记
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../%E5%AE%9E%E8%B7%B5%E5%86%85%E5%AE%B9%E8%AE%A8%E8%AE%BA/" class="md-tabs__link md-tabs__link--active">
+          速记
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Foam-mkdocs-template" class="md-nav__button md-logo" aria-label="Foam-mkdocs-template">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Foam-mkdocs-template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="HomePage" class="md-nav__link">
+      HomePage
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Diary
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Diary" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Diary
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+       8 month
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label=" 8 month" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
+         8 month
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../diary/_8_month/week2/" title="WEEK 2 #日记" class="md-nav__link">
+      WEEK 2 #日记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../diary/_8_month/week3/" title="Week 3 #日记" class="md-nav__link">
+      Week 3 #日记
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      代码学习笔记
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="代码学习笔记" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        代码学习笔记
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/django/" title="Django学习笔记 #笔记" class="md-nav__link">
+      Django学习笔记 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/markdown/" title="Markdown总览 #笔记" class="md-nav__link">
+      Markdown总览 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/pygame/" title="pygame库学习笔记 #笔记" class="md-nav__link">
+      pygame库学习笔记 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python/" title="python语法归纳 #笔记" class="md-nav__link">
+      python语法归纳 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/stata/" title="stata基本内容介绍 #笔记" class="md-nav__link">
+      stata基本内容介绍 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6">
+    
+    <label class="md-nav__link" for="nav-3-6">
+      实例
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="实例" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-6">
+        <span class="md-nav__icon md-icon"></span>
+        实例
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AE%9E%E4%BE%8B/PPT/" title="MPE-PPT方法 #笔记" class="md-nav__link">
+      MPE-PPT方法 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AE%9E%E4%BE%8B/mermaid/" title="mermaid使用 #笔记" class="md-nav__link">
+      mermaid使用 #笔记
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      速记
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="速记" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        速记
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E5%AE%9E%E8%B7%B5%E5%86%85%E5%AE%B9%E8%AE%A8%E8%AE%BA/" title="物理与实践 #笔记" class="md-nav__link">
+      物理与实践 #笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        本研踏勘+stata实现 #笔记
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="本研踏勘+stata实现 #笔记" class="md-nav__link md-nav__link--active">
+      本研踏勘+stata实现 #笔记
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#一本研基础流程" class="md-nav__link">
+    一、本研基础流程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二踏勘需求" class="md-nav__link">
+    二、踏勘需求
+  </a>
+  
+    <nav class="md-nav" aria-label="二、踏勘需求">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-总体目的" class="md-nav__link">
+    1. 总体目的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-具体方案" class="md-nav__link">
+    2. 具体方案
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三stata实现" class="md-nav__link">
+    三、stata实现
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../%E7%BB%98%E7%94%BB/" title="绘画基本技法 #笔记" class="md-nav__link">
+      绘画基本技法 #笔记
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#一本研基础流程" class="md-nav__link">
+    一、本研基础流程
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#二踏勘需求" class="md-nav__link">
+    二、踏勘需求
+  </a>
+  
+    <nav class="md-nav" aria-label="二、踏勘需求">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-总体目的" class="md-nav__link">
+    1. 总体目的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-具体方案" class="md-nav__link">
+    2. 具体方案
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#三stata实现" class="md-nav__link">
+    三、stata实现
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="本研踏勘stata实现-笔记">本研踏勘+stata实现 #笔记<a class="headerlink" href="#本研踏勘stata实现-笔记" title="Permanent link">#</a></h1>
+<h2 id="一本研基础流程">一、本研基础流程<a class="headerlink" href="#一本研基础流程" title="Permanent link">#</a></h2>
+<blockquote>
+<p><a href="../../project/本研/README/README.md">参照模块</a></p>
+</blockquote>
+<ol>
+<li>数据获取<ol>
+<li>手段：购买数据为基础、爬虫爬取为补充</li>
+</ol>
+</li>
+<li><a href="#二踏勘需求">实地踏勘</a><ol>
+<li><strong>目的</strong><ol>
+<li>筛选变量：便于数据分析展开</li>
+<li>了解当地变量背景：便于数据分析解释</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="#三stata实现">数据分析</a><ol>
+<li><strong>手段</strong><ol>
+<li>总体性区位指数（Moran/Geary/散点图/LISA等）</li>
+<li>结构性变量回归（stata双差分模型回归）</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>报告撰写</p>
+<ol>
+<li>
+<p>基本脉络</p>
+<div class="highlight"><pre><span></span><code>graph LR
+引言-.-&gt;文献综述==&gt;理论思路-.-&gt;实践操作==&gt;结果分析拓展-.-&gt;结论与建议
+</code></pre></div>
+</li>
+<li>
+<p>参考文献</p>
+<ol>
+<li><a href="https://kns.cnki.net/KXReader/Detail?invoice=skOndDLpdMFT33zar2NQWcmk30zzNKhpnv84sAfO28T9L%2BT4oETgaE%2B0hVZKZWa39X2gOHkVMtTfuiSLf8fgFUqowxYJ4nc5EeUT4Ucydo06wB%2BY7p00K674FnazuskTdHDSU4fN7YhAdghg6%2BADumXkB5q376kfqcJDRWoH%2FOE%3D&amp;DBCODE=CJFD&amp;FileName=JMDZ202203007&amp;TABLEName=cjfdlast2022&amp;nonce=8C3D58E958424F089255720157906EF8&amp;uid=&amp;TIMESTAMP=1658276419923">地铁开通对城市房价的影响——基于厦门</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="二踏勘需求">二、踏勘需求<a class="headerlink" href="#二踏勘需求" title="Permanent link">#</a></h2>
+<h3 id="1-总体目的">1. 总体目的<a class="headerlink" href="#1-总体目的" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">目的</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>筛选变量</strong></td>
+<td>在分析前，通过**当地背景环境、调研情况**筛选 <strong><em>相关性强的变量</em></strong> 引入分析回归 <br> <img alt="相关变量" src="https://raw.githubusercontent.com/dsw676676/picture/main/image/%E7%9B%B8%E5%85%B3%E5%8F%98%E9%87%8F.png" /></td>
+</tr>
+<tr>
+<td align="center"><strong>了解当地变量背景</strong></td>
+<td>在分析中/后，通过**当地背景环境**以 <strong><em>解释正确的变量反应方向和幅度</em></strong> / <strong><em>发现错误的变量问题</em></strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-具体方案">2. 具体方案<a class="headerlink" href="#2-具体方案" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>记录客观环境</strong></td>
+<td>主要点位 <em>(CBD/主干道...+地铁&rarr;一致性/偏离性)</em>、环境特殊性 <em>(特殊建制...)</em></td>
+</tr>
+<tr>
+<td><strong>调查主观心理</strong></td>
+<td>购房偏好 <em>(交通/滨水/高层...)</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="三stata实现">三、stata实现<a class="headerlink" href="#三stata实现" title="Permanent link">#</a></h2>
+<ol>
+<li>数据处理</li>
+<li>固定效应检验</li>
+</ol>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../%E5%AE%9E%E8%B7%B5%E5%86%85%E5%AE%B9%E8%AE%A8%E8%AE%BA/" title="物理与实践 #笔记" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                物理与实践 #笔记
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../%E7%BB%98%E7%94%BB/" title="绘画基本技法 #笔记" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  下一页
+                </span>
+                绘画基本技法 #笔记
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.3636a4ec.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9fe3281.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["navigation.expand", "tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
