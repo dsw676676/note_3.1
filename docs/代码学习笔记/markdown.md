@@ -3,6 +3,7 @@
 ## 一、markdown基本语法
 
 ### 1. 内容
+
    1. #### 标题
    2. **加粗**
    3. *倾斜*
@@ -14,6 +15,7 @@
 
 <!-- slide_ -->
 ### 2. 条块
+
    1. |表头|
       |:--|
    2. > 注释
@@ -22,7 +24,9 @@
         ---
    4. ```python
       print("code trunk")```
+
 ### 3. 快捷键
+
    Key|Command
    :--|--:
    Ctrl + B|Toggle bold
@@ -38,12 +42,17 @@
 ## 二、插件分工
 
 ### 1. markdown all in one
+
 1. 自动补全、换行
 2. 提供目录：`Ctrl+Alt+P`
 3. 书写[数学公式](#四markdown-math) ：`Ctrl+M`
+
 ### 2. picgo
+
 1. 粘贴图片`Ctrl+Alt+U`
+
 ### ~~3. markdown preview enhanced~~
+
 1. 幻灯片
    1. 分页：\<!-- slide_ -->
    2. [样式](实例/PPT.md)：first theme, mouseWheel, transition, progress
@@ -53,14 +62,17 @@
 3. 绘图
    1. [mermaid绘图](实例/mermaid.md)
 4. 可执行代码块
+
    ```python{cmd=true}
       print("code trunk")
    ```
+
 5. 导出：pandoc
-   
+
 ## 三、Markdown-Math
 
 ### 1.总结
+
 1. 语法概览
    1. 框架：`$行内$`、`$$行间$$`
    2. 函数：`\func{x}`
@@ -70,7 +82,9 @@
     | :-------------- | ----------------: |
     | \begin{} \end{} | 开始结束，如matrx |
     | \sum            |              求和 |
+
 ### 2.罗列
+
 $$ \beta = \frac{\sqrt{x}}{\sqrt{y+1}} \tag{2.1} $$
 
 $$ \left|\begin{matrix}
