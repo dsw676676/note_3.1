@@ -1,18 +1,5 @@
 # Markdown总览 #笔记
 
-- [Markdown总览 #笔记](#markdown总览-笔记)
-  - [一、markdown基本语法](#一markdown基本语法)
-    - [1. 内容](#1-内容)
-    - [2. 条块](#2-条块)
-    - [3. 快捷键](#3-快捷键)
-  - [二、插件分工](#二插件分工)
-    - [1. markdown all in one](#1-markdown-all-in-one)
-    - [2. picgo](#2-picgo)
-    - [~~3. markdown preview enhanced~~](#3-markdown-preview-enhanced)
-  - [三、Markdown-Math](#三markdown-math)
-    - [1.总结](#1总结)
-    - [2.罗列](#2罗列)
-  
 ## 一、markdown基本语法
 
 ### 1. 内容
