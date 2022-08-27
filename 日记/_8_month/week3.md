@@ -127,8 +127,14 @@
 
 即将离开...
 
-## 2022/8/14 Monday
+## 结语
 
-### 目标
+### 所得
 
-1. 
+暑假学习了python爬虫进阶、markdown语法、jupyter/vscode/conda/MPE软件。
+
+### 展望
+
+[英语六级复习](https://web.shanbay.com/wordsweb/#/study?type=book)、**概率统计复习**、[本研课题](../../../project/本研/README/README.md) 仍然在短期内作为主要内容
+
+> 此后日程编排将继续使用`outlook`作为唯一平台，`markdown`只用于代码笔记记录。
