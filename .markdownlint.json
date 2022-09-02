@@ -4,5 +4,6 @@
     "no-hard-tabs": false,
     "MD024": false,
     "MD033": false,
-    "MD013": false
+    "MD013": false,
+    "MD051": false
 }

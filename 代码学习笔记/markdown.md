@@ -23,7 +23,8 @@
 
         ---
    4. ```python
-      print("code trunk")```
+print("code trunk")
+         ```
 
 ### 3. 快捷键
 
