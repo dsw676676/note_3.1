@@ -1,4 +1,4 @@
-# WEEK 2 #日记
+# Aug_week 2 #日记
 
 ## 2022/8/2 Tuesday
 
