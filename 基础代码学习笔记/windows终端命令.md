@@ -1,4 +1,4 @@
-# windows命令 #笔记
+# 终端命令 #笔记
 
 > 数据来源：[知乎windows命令介绍](https://zhuanlan.zhihu.com/p/426749071)
 
@@ -27,9 +27,15 @@
    | `cls` | 清屏 |
 
 ## 4. git
-   | 命令                        | 作用          |
-   | --------------------------- | ------------- |
-   | `git init`                  | 初始化仓库    |
-   | `git add .`                 | 添加修改      |
-   | `git commit -am commitname` | 添加/提交修改 |
-   | `git pull`                  | 抓取修改      |
+
+> [git - 简明指南](https://www.runoob.com/manual/git-guide/)
+
+| 命令                        | 作用           |
+| --------------------------- | -------------- |
+| `git init`                  | 初始化仓库     |
+| `git add .`                 | 提交入暂存库   |
+| `git commit -am commitname` | 提交入本地仓库 |
+| `git push .`                | 提交入远程仓库 |
+| `git pull`                  | 抓取分支       |
+
+   ![20220903122226](https://raw.githubusercontent.com/dsw676676/picture/main/image/20220903122226.png)
