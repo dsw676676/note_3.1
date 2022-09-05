@@ -61,4 +61,4 @@ We\ have\ (g \circ f)(x) = g(f(x))$$
 ### 5. 分段函数
 
 1. 特殊函数：$f(x)=\{x\}=x-[x]$
-2. Dirichlet函数：$D(x)=\begin{cases}1 & ,x \in Q\\ 0&,x\in R\Q \end{cases}$
+2. Dirichlet函数：$D(x)=\begin{cases}1 & ,x \in Q\\ 0&,x\in R\ but\ Q \end{cases}$
