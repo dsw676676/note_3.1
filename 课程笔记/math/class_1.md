@@ -19,7 +19,9 @@
    4. $\forall$：对所有
 4. 绝对值不等式
    1. 定义
+
 		![20220905201402](https://raw.githubusercontent.com/dsw676676/picture/main/image/20220905201402.png)
+
 		![20220905201441](https://raw.githubusercontent.com/dsw676676/picture/main/image/20220905201441.png)
 
 ## 二、函数
@@ -50,7 +52,7 @@
 
 ### 4. 复合函数
 
-$$Def\ 
+$$Def\
 \begin{cases}
 	f:X \to Y, \\ g:Y^* \to Z
 \end{cases}\\
