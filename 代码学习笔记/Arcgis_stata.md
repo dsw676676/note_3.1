@@ -1,10 +1,6 @@
-# stata基本内容介绍 #笔记
+# Arcgis_stata基本内容介绍 #笔记
 
-## 一、双差分回归
-
-1. 暂定
-
-## 二、gis笔记
+## 一、Arcgis笔记
 
 ### 1. 坐标系
 
@@ -24,3 +20,21 @@
 ### 3. 基准面
 
 > `不规则椭球`到`规则球体`的转化
+
+## 二、stata笔记
+
+> 基础脉络梳理
+
+```mermaid
+sequenceDiagram
+note over Stata: 核心操作对象
+Input ->> Stata: 导入数据
+Loop 重复尝试-程序编写
+	Stata ->> Stata: 处理变量
+	Stata ->> Output: 固定效应/双差分回归
+	Output ->>Output: 结果解读
+end
+```
+
+1. 程序编写
+2. 
