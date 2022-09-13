@@ -27,3 +27,11 @@
 > 大三上课表：
 >  
 > ![课表](https://raw.githubusercontent.com/dsw676676/picture/main/image/20220905111039.png)
+
+140.82.114.4 github.com
+199.232.69.194 github.global.ssl.fastly.net
+151.101.1.194 github.global.ssl.fastly.net
+151.101.65.194 github.global.ssl.fastly.net
+151.101.129.194 github.global.ssl.fastly.net
+151.101.193.194 github.global.ssl.fastly.net
+140.82.114.3 assets-cdn.github.com
