@@ -2,7 +2,7 @@
 
 > 永久搁置`日记`、`数学电子笔记`计划，当前保留[《课程笔记》](#三课程笔记)仅为历史遗留保存。此后vscode仅作为`代码笔记`、`代码运行`位置
 >  
-> 特别鸣谢HTT/HOTOS官方的指令指导和笔记补正，欢迎大家关注大佬[github](https://github.com/NTFS2020)的MinecraftMod和小工具合集
+> 特别鸣谢Mojave的指令指导和笔记补正，也欢迎大家关注大佬[github](https://github.com/NTFS2020)的pyMSL工具仓库
 
 ## 一、[基础代码学习笔记](代码学习笔记/markdown.md)
 
@@ -16,7 +16,7 @@
 
 属于临时笔记账户。
 
-> [docs](docs/README.md)是本研相关内容讨论，发表于[blog](https://dsw676676.github.io/note_3.1/#/)上。
+> [docs](速记/本研议题.md)是本研相关内容讨论，发表于[blog](https://dsw676676.github.io/note_3.1/#/)上。
 
 ## 三、[课程笔记](课程笔记/math/class_1.md)
 

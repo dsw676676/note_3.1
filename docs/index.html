@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh_CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
@@ -10,12 +10,30 @@
 </head>
 <body>
   <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '本研相关课题笔记',
-      repo: 'https://github.com/dsw676676/project/tree/change/%E6%9C%AC%E7%A0%94',
-      coverpage:true
+  // Import mermaid
+  // <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+  // <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  
+  var num = 0;
+  mermaid.initialize({ startOnLoad: false });
+  
+  window.$docsify = {
+    markdown: {
+      renderer: {
+        code: function(code, lang) {
+          if (lang === "mermaid") {
+            return (
+              '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+            );
           }
+          return this.origin.code.apply(this, arguments);
+        }
+      }
+    },
+    name = "",
+    repo = "",
+    coverpage = true
+  }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
