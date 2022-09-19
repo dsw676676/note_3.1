@@ -16,21 +16,14 @@
 ### 2. 重要语法
 
 1. 循环：`for`/`while`/`def递归`+`continue`/`break`
-
 2. 错误检测：`try: except: else: finally:`
-
 3. 函数function
-   
    1. 内外变量：`global`
-   
    2. 匿名函数：`lambda定义`+`map应用`
-   
    3. 内置函数
-      
       ![20220806170848](https://raw.githubusercontent.com/dsw676676/picture/main/image/20220806170848.png)
 
 4. 类class：是对象的实例
-   
    1. 变量类型：全局`global`、局部`local`、类属性`self.sth`
    2. 函数类型：初始函数`self.__init__`、类函数`self.func`
 
