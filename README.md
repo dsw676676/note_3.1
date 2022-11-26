@@ -4,6 +4,19 @@
 > 
 > 特别鸣谢Mojave的指令指导和笔记补正，也欢迎大家关注大佬[github](https://github.com/NTFS2020)的pyMSL工具仓库
 
+## 工作流
+
+1. 课程学习：word记录课上笔记$\to$onenote课后归纳
+2. 论文撰写：zotero文献阅读$\to$word内容撰写$\to$Latex排版引注
+3. 技术工具
+
+    | 需求     | 工具                       |
+    | -------- | -------------------------- |
+    | 自动化   | python                     |
+    | 数据处理 | jupyter/excel              |
+    | 回归分析 | SPSS/stata                 |
+    | 文字写作 | word/markdown/LaTex/Zotero |
+
 ## 一、[基础代码学习笔记](代码学习笔记/markdown.md)
 
 学习python, markdown, stata等**基础语言**的笔记账户。
@@ -29,5 +42,5 @@
 **docsify博客**的源代码
 
 > 大三上课表：
-> 
+>  
 > ![课表](https://raw.githubusercontent.com/dsw676676/picture/main/image/20220905111039.png)
