@@ -1,9 +1,0 @@
-{
-	"nodes":[
-		{"id":"e8c56e5c36704ec9","x":-403,"y":-117,"width":96,"height":60,"type":"text","text":"段舒文"},
-		{"id":"4f9bf49f6e553b72","x":-196,"y":-116,"width":119,"height":60,"type":"text","text":"新卡片内容"}
-	],
-	"edges":[
-		{"id":"9624b7290ff54517","fromNode":"e8c56e5c36704ec9","fromSide":"right","toNode":"4f9bf49f6e553b72","toSide":"left"}
-	]
-}

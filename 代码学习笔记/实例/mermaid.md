@@ -1,15 +1,4 @@
 # mermaid使用 #笔记
-- [mermaid使用 #笔记](#mermaid使用-笔记)
-  - [一、序列图sequenceDiagram](#一序列图sequencediagram)
-    - [1. 关系](#1-关系)
-    - [2. 标记](#2-标记)
-  - [二、流程图graph](#二流程图graph)
-    - [1. 线关系](#1-线关系)
-    - [2. 面关系](#2-面关系)
-  - [三、饼图pie](#三饼图pie)
-    - [1. 主体：`name: num`](#1-主体name-num)
-    - [2. 标记：`title`](#2-标记title)
-
 ## 一、序列图sequenceDiagram
 ### 1. 关系
 1. 线方向：`->>`
