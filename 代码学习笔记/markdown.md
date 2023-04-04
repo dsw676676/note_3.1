@@ -23,7 +23,7 @@
 2. > 注释
 
 3. 分割线
-   
+
      ---
 
 4. ```python
@@ -59,21 +59,15 @@
 ### ~~3. markdown preview enhanced~~
 
 1. 幻灯片
-   
    1. 分页：\<!-- slide_ -->
    2. [样式](实例/PPT.md)：first theme, mouseWheel, transition, progress
-
 2. 目录
-   
    1. 简单：[toc]
    2. 复杂：Ctrl+Shift+P >> Create Toc
-
 3. 绘图
-   
    1. [mermaid绘图](实例/mermaid.md)
-
 4. 可执行代码块
-   
+
    ```python{cmd=true}
       print("code trunk")
    ```
@@ -85,13 +79,12 @@
 ### 1.总结
 
 1. 语法概览
-   
    1. 框架：`$行内$`、`$$行间$$`
    2. 函数：`\func{x}`
    3. 编号：`\tag{}`
 
 2. 常用函数[link]
-   
+
    | 函数              | 含义          |
    |:--------------- | -----------:|
    | \begin{} \end{} | 开始结束，如matrx |
