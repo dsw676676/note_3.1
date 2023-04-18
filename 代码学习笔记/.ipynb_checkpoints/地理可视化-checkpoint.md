@@ -8,19 +8,7 @@
    import pandas as pd
    ```
 
-2. 工作函数：输入、增减、处理、输出
-   1. 输入：`df = pd.read_**()`
-   2. 增减
-      1. 行列拼接：`pd.concat([df1,df2],axis=)`
-      2. 字段连接：`df1.merge(df2,how=)`
-      3. x轴合并：`df1.join(df2,how=)`
-      4. y轴合并：`df1.append(df2,how=)`
-      5. 插入行列：`df1.insert(loc,name,lst)`、`df1[name1] = lst`
-   3. 处理
-      1. 筛选条件：`df[cond]`
-      2. 新建条件：`df2 = cond(df1[cond])`
-      3. 统计描述：`cond(df1[cond])`
-   4. 输出：`df.to_**()`
+2. 工作函数：输入、处理、输出
 
 ## geopandas
 
